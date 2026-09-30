@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Tajawal', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8fafc;
+  color: #1e293b;
+  direction: rtl;
+}
+
+.app-shell {
+  min-height: 100vh;
+}
+
+/* تحسين السكرول بار */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* تأثيرات الكروت والأزرار */
+button {
+  transition: all 0.2s ease-in-out;
+}
+button:active {
+  transform: scale(0.97);
+}
+
+/* حركات ناعمة للظهور */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+main {
+  animation: fadeIn 0.3s ease-in-out;
+}
